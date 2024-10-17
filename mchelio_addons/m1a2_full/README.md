@@ -9,5 +9,6 @@ The directory should look like this: ./minecraft/mcheli_addons/m1a2_full/assets/
 
 # Credits
 
-EMB4 - Original code for the Abrams
+EMB4 - Original code for the Abrams.
+
 DICE - Tank fire sounds from their game Battlefield 3/4.
