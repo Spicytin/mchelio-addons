@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "M1A2 Abrams - Full Auto HEAT and APFSDS Weapons"
+  },
+  "addon": {
+    "domain": "m1a2_full",
+    "version": "1.0",
+    "credits": "Fureniku",
+    "description": "Low effort Mcheli-o addon that adds two silly weapons to M1A2 Abrams.",
+    "loader_version": "1",
+    "authors": [Spikyyn]
+  }
+}
