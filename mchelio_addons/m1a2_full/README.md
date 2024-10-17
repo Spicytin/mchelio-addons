@@ -1,6 +1,6 @@
 # M1A2 Abrams - Full Auto HEAT and APFSDS Weapons
 
-Low effort Mcheli-o addon that adds two silly weapons to M1A2 Abrams.
+Low effort Mcheli Overdrive addon that adds two silly weapons to M1A2 Abrams.
 
 # Installation
 
