@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "Un-UAV Planes"
+  },
+  "addon": {
+    "domain": "unuav_planes",
+    "version": "1.0",
+    "credits": "",
+    "description": "Allows you to enter and fly remote controlled planes without using a UAV controller.",
+    "loader_version": "1",
+    "authors": [Spikyyn]
+  }
+}

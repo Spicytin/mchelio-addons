@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "M1A2 Abrams - Full Auto HEAT and APFSDS Weapons"
+  },
+  "addon": {
+    "domain": "m1a2_full",
+    "version": "1.1",
+    "credits": "EMB4, Regex, DICE",
+    "description": "A Mcheli Overdrive addon that adds two silly weapons to the M1A2 Abrams, aswell as the no roof-mounted machine guns variant and the modified texture w/o combat identify panels.",
+    "loader_version": "1",
+    "authors": [Spikyyn]
+  }
+}
