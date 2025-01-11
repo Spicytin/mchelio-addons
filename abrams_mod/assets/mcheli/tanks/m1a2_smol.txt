@@ -1,0 +1,146 @@
+DisplayName = M1A2 Abrams (Smol)
+AddDisplayName = ja_JP, M1A2 エイブラムス
+ItemID = 30100
+CreativeOnly = true
+Invulnerable = true
+ThirdPersonDist = 12
+MaxHp = 400
+Speed = 0.7
+Sound = abrams
+ThrottleUpDown = 20.0
+SoundPitch = 0.6
+MobilityYawOnGround = 2.0
+MinRotationPitch = -20
+MaxRotationPitch = 10
+MobilityRoll = 0
+Gravity = -0.61
+DamageFactor = 0.0
+CameraZoom = 3
+CameraPosition = 0.005451,  1.70, 2.20, true
+EnableNightVision = true
+CameraRotationSpeed = 25
+;EnableEntityRadar = true
+MaxFuel = 1200
+FuelConsumption = 3.0
+StepHeight = 1.5
+DefaultFreelook = true
+OnGroundPitchFactor = 2.0
+OnGroundRollFactor  = 1.3
+FlareType = 10
+InventorySize = 18
+float = true
+FloatOffset = -0.5
+
+; 指定した高さまでの水に触れてもダメージを受けない
+; 2であれば2ブロックまでダメージ無し
+SubmergedDamageHeight = 3
+
+HideEntity = true
+
+; Tank or Car or Unknown
+WeightType = Tank
+
+; 重心Z座標設定
+WeightedCenterZ = 0.0
+
+;SetWheelPos =  X座標, Y座標,  Z座標1, Z座標2, Z座標3 ...
+; X座標のマイナス側は必要なし
+SetWheelPos =  1.82,  -0.24,  3.55, 2.22,  0.70, -0.70, -2.22, -3.55
+
+HUD = mbt_hud, none, none, none
+
+AddGunnerSeat =  0.00,  0.10,  0.05,    0.00,  1.40,  0.05,  false, -90, 90, true
+AddSeat =  0.00,  0.5, 2.8, false
+
+; 地面の滑りやすさ、小さいほど摩擦が大きくなり動きにくくなる
+MotionFactor = 0.9
+
+;ArmorMinDamage 最小ダメージ、これより小さいダメージは無効化される
+
+;ArmorMaxDamage 最大ダメージ、これより大きいダメージは最大ダメージに丸められる
+;ArmorMaxDamage = 500
+;ArmorDamageFactor ダメージ係数上記のMin/Max範囲チェック後のダメージの係数 1で100%, 0.5で50%
+ArmorDamageFactor = 1.00
+;後退可能にする
+EnableBack = true
+
+;PivotTurnThrottle を0より大きい値にすると超信地旋回ができなくなる。デフォルトは0
+PivotTurnThrottle = 0.0
+
+
+; 転輪の回転速度：0より小さい値を設定すると逆回転する
+;TrackRollerRot = 30
+
+AddCrawlerTrack = false, 0.37, -1.85,  0.64/ -3.27,  0.60/ -3.58,  0.60/ -3.55,  0.34/ -3.44,  -0.36/ -2.97,  -0.33/ -2.55,  -0.33/  1.87,  -0.31/ 2.23,  0.00/ 3.14,  0.48/ 3.22,  0.60/ 3.12,  0.70/ 3.03,
+AddCrawlerTrack = false, 0.37,  1.85,  0.64/ -3.27,  0.60/ -3.58,  0.60/ -3.55,  0.34/ -3.44,  -0.36/ -2.97,  -0.33/ -2.55,  -0.33/  1.87,  -0.31/ 2.23,  0.00/ 3.14,  0.48/ 3.22,  0.60/ 3.12,  0.70/ 3.03,
+
+;転輪を追加する、設定は座標だけで、X軸が負の値だと右側、正の値だと左側の転輪となる
+;履帯と同じ動きをするが、履帯がなくても設定可能
+AddTrackRoller = -1.30,  0.41,  2.85
+AddTrackRoller = -1.30,  0.04,  1.79
+AddTrackRoller = -1.30,  0.04,  0.92
+AddTrackRoller = -1.30,  0.04,  0.23
+AddTrackRoller = -1.30,  0.04, -0.45
+AddTrackRoller = -1.30,  0.04, -1.14
+AddTrackRoller = -1.30,  0.04, -1.83
+AddTrackRoller = -1.30,  0.04, -2.52
+AddTrackRoller = -1.30,  0.46, -3.11
+
+AddTrackRoller =  1.31,  0.41,  2.85
+AddTrackRoller =  1.31,  0.04,  1.99
+AddTrackRoller =  1.31,  0.04,  1.13
+AddTrackRoller =  1.31,  0.04,  0.43
+AddTrackRoller =  1.31,  0.04, -0.25
+AddTrackRoller =  1.31,  0.04, -0.94
+AddTrackRoller =  1.31,  0.04, -1.63
+AddTrackRoller =  1.31,  0.04, -2.32
+AddTrackRoller =  1.31,  0.46, -3.11
+
+;主砲
+AddPartWeapon = abramsapfsds / abramsheat, false, true, false,  0.00, 1.40, 0.00, 0
+AddPartWeaponChild = false, true, 0.00, 1.10, 1.72, 0.0
+AddPartWeaponChild = false, true, 0.00, 1.10, 1.72, 0.5
+AddTurretWeapon = abramsapfsds, 0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+AddTurretWeapon = abramsheat,     0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+AddTurretWeapon = abramscoax,      0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+
+AddTurretWeapon = mbt_cas,  0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+AddTurretWeapon = agm114tv,  0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+AddTurretWeapon = targeting_pod_all100s,  0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+AddTurretWeapon = targeting_pod_block,  0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+
+AddTurretWeapon = dispenser_fire3,  0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+AddTurretWeapon = dispenser_seed2,  0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+AddTurretWeapon = dispenser_water3,  0.005451, 1.10, 1.72,  0.0, 0.0, true,1, 0,-360,360, -20, 10
+
+AddRecipe = "XXX",  " X ",  "III",  X, iron_block,  I, iron_ingot
+
+;RideRack = 乗る機体名, ラック番号 (1～) 
+RideRack = c5, 1
+RideRack = c5, 2
+
+
+ArmorMinDamage = 25
+
+;front hull 360mm
+BoundingBox = 0.0, -0.2, 1.7, 3.0, 0.1, 0.02
+
+BoundingBox = 0.0, 0.2, 2.1, 3.0, 0.2, 0.03
+BoundingBox = 0.0, 0.4, 1.6, 3.0, 0.2, 0.08
+BoundingBox = 0.0, 0.5, 1.0, 3.0, 0.2, 0.11
+BoundingBox = 0.0, 0.6, 0.5, 3.0, 0.2, 0.09
+
+;turret
+BoundingBox = 0.0, 1.3, 0.0, 3.0, 0.3, 0.02
+
+
+
+;mid
+BoundingBox = 0.0, 0.2, 0.0, 3.01, 0.6, 0.41
+;back side
+BoundingBox = 0.0, 0.2, -2.0, 3.0, 0.6, 0.9
+BoundingBox = 0.0, 0.2, -2.4, 3.0, 0.6, 0.9
+;back back
+BoundingBox = 0.0, 0.4, -3.0, 2.99, 0.4, 3.0
+
+unmountposition = 0.005451,  0.3,  4.7

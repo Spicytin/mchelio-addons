@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": ""
+  },
+  "addon": {
+    "domain": "abrams_mod",
+    "version": "1.0",
+    "credits": "Fureniku",
+    "description": "",
+    "loader_version": "1",
+    "authors": [Spikyyn]
+  }
+}

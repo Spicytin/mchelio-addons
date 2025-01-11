@@ -1,0 +1,18 @@
+DisplayName = Water Dispenser
+Type = Dispenser
+Acceleration = 8
+Sight = None
+Delay = 1
+Sound = smoke_snd
+SoundDelay = 0
+
+SmokeSize   = 0.5
+
+;着弾時に使用するアイテムに水バケツを指定する。
+; 本来水バケツは使用すると水を設置するが、ヘリMOD内では特殊な処理を行って火を消していいる。
+DispenseItem = water_bucket
+DispenseRange = 5
+
+MaxAmmo = 200
+SuppliedNum = 200
+Item =  5, water_bucket

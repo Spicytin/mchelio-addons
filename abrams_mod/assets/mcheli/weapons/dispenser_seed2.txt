@@ -1,0 +1,17 @@
+DisplayName = Seed Dispenser
+Type = Dispenser
+Acceleration = 8
+Sight = None
+Delay = 0
+Sound = smoke_snd
+SoundDelay = 4
+
+SmokeSize   = 0.5
+
+;着弾時に使用するアイテムに種を指定する。耕地に植えることができる。
+DispenseItem = wheat_seeds
+DispenseRange = 1
+
+MaxAmmo = 48
+SuppliedNum = 8
+Item =  64, wheat_seeds
